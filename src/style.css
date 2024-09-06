@@ -68,10 +68,12 @@ button:focus-visible {
 
 #sidebar {
   background-color: rgb(212, 212, 212);
+  width: px;
+  height: 400px;
 }
 
 #detail {
-  min-width: 200px;
+  min-width: 300px;
 
   background-color: rgb(192, 233, 233);
 }

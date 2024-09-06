@@ -17,6 +17,16 @@ const Layout = () => {
               Home
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/abo"
+              className={({ isActive, isPending }) =>
+                isPending ? "notactive" : isActive ? "active" : ""
+              }
+            >
+              About
+            </NavLink>
+          </li>
 
           <li>
             <NavLink
@@ -47,6 +57,26 @@ const Layout = () => {
               }
             >
               Signup
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive, isPending }) =>
+                isActive ? "active" : isPending ? "notactive" : ""
+              }
+            >
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/protected"
+              className={({ isActive, isPending }) =>
+                isActive ? "active" : isPending ? "notactive" : ""
+              }
+            >
+              Protected
             </NavLink>
           </li>
         </ul>

@@ -6,7 +6,7 @@ import Layout from "../pages/Layout";
 import LoggedIn from "../pages/LoggIn";
 
 export default function Root() {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
 
   return (
     <div id="wrapper">
